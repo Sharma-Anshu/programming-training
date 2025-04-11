@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int belowTarget (const std::vector<std::vector<int>>& matrix, int target)
+int belowTarget (const std::vector<std::vector<int>>& matrix, int target) 
 {
   if (matrix.empty() || matrix[0].empty())
   {

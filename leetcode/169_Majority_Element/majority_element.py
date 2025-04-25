@@ -10,13 +10,11 @@ from typing import List
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         nums.sort()
-        print(nums)
         cnt = 0
         sel = nums[0]
         for n in nums:
             if n == sel:
                 cnt += 1
-                print(cnt)
                 if cnt >= len(nums) / 2:
                     return sel
             else:
